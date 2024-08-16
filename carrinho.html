@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #CECECE;
+        }
+        header {
+            background-color: #0047AB;
+            color: whitesmoke;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .produto, .carrinho {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .produto input, .produto button {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .produto button {
+            background-color: #40DC46;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .produto button:hover {
+                    background-color: #1A5BB8;
+
+        }
+        .carrinho__produtos__produto {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .texto-azul {
+            color: #666666;
+        }
+        .total {
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <a href="index.html"><button type="submit">Voltar</button></a>
+      <a href="login.html"><button type="submit">Comprar</button></a>
+    </header>
+    <div class="container">
+        <div class="produto">
+            <label for="produto">Produto:</label>
+            <input type="text" id="produto" placeholder="Nome do Produto - R$Preço">
+            <label for="nome produto">"Nome do Produto - R$Preço</label>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" value="1">
+            <button onclick="adicionar()">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <div id="lista-produtos"></div>
+            <div class="total">
+                <strong>Total:</strong> <span id="valor-total">R$ 0</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let totalGeral = 0;
+
+        function adicionar() {
+            let produto = document.getElementById('produto').value;
+            let nomeProduto = produto.split('-')[0].trim();
+            let valorUnitario = parseFloat(produto.split('R$')[1].trim());
+            let quantidade = parseInt(document.getElementById('quantidade').value);
+
+            let preco = quantidade * valorUnitario;
+            let carrinho = document.getElementById('lista-produtos');
+
+            carrinho.innerHTML += `<section class="carrinho__produtos__produto">
+                <span class="texto-azul">${quantidade}x</span> ${nomeProduto} 
+                <span class="texto-azul">R$${preco.toFixed(2)}</span>
+            </section>`;
+
+            totalGeral += preco;
+            document.getElementById('valor-total').textContent = `R$ ${totalGeral.toFixed(2)}`;
+
+            document.getElementById('produto').value = '';
+            document.getElementById('quantidade').value = 1;
+        }
+    </script>
+</body>
+</html>

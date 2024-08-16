@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="reset.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- swiper-carrossel -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Leisure sports</title>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                </label>
+
+                <ul class="lista__menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a href="sobre.html" class="lista-menu__link">Sobre</a></li>
+                    <li class="lista-menu__item">
+                        <a href="/html/patrocinadores.html" class="lista-menu__link">Patrocinadores</a></li>
+                    <li class="lista-menu__item">
+                        <a href="produtos.html" class="lista-menu__link">Produtos</a></li>
+                    
+                    <li class="lista-menu__item">
+                        <a href="/Radius Raid/index1.html" class="lista-menu__link">Jogue</a></li>
+                </ul>    
+
+                <a href="#"><img class="container__imagem" src="img/Logo.svg" alt="logo alura books"></a>
+                <h1 class="container__titulo"><b class="container__titulo--negrito">Leisure </b> sports</h1>
+            </div>
+
+            <ul class="opcoes">
+
+                <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+                <label for="opcoes-menu" class="opcoes__rotulo">
+                    <li class="opcoes__item">Categorias</li>
+                </label>
+
+                <ul class="lista__menu">
+                    <li class="lista-menu__item">
+                        <a href="sobre.html" class="lista-menu__link">Sobre</a></li>
+                    <li class="lista-menu__item">
+                        <a href="patrocinadores.html" class="lista-menu__link">Patrocinadores</a></li>
+                    <li class="lista-menu__item">
+                        <a href="produtos.html" class="lista-menu__link">Produtos</a></li>
+                  
+                    <li class="lista-menu__item">
+                        <a href="2048 Charm Puzzle Game With Colam/index1.html" class="lista-menu__link">Jogue</a></li>
+                </ul>    
+
+                <li class="opcoes__item"><a href="login.html" class="opcoes__link">Favoritos</a></li>
+                <li class="opcoes__item"><a href="carrinho.html" class="opcoes__link">Carrinho</a></li>
+            </ul>
+
+            <div class="container">
+                <a href="#" class="container__link">
+                    <img class="container__imagem container__imagem--coracao" src="img/Favoritos.svg" alt="Meus favoritos"></a>
+                <a href="carrinho.html" class="container__link">
+                    <img class="container__imagem" src="img/Compras.svg" alt="Carrinho de compras">
+                    <p class="container__texto">Minha sacola</p>
+                </a>
+                <a href="login.html" class="container__link">
+                    <img class="container__imagem" src="img/Usuario.svg" alt="meu perfil">
+                    <p class="container__texto">Meu perfil</p>
+                </a>
+            </div>
+        </header>
+
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre aqui oque vai precisar no seu esporte e lazer!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+
+        <!-- 1º carrosel -->
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+            <!-- Slider main container -->
+            <div class="carrossel__container">
+                
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img work/chuteira ad.png" alt="livro sobre apache ApacheKafka"></div>
+                        <div class="swiper-slide"><img src="img work/camisa pl.png" alt="livro sobre liderança"></div>
+                        <div class="swiper-slide"><img src="img work/megamix.png" alt="livro sobre javascript"></div>
+                        <div class="swiper-slide"><img src="img work/cube 4x4.png" alt="livro sobre Front-end"></div>
+                        <div class="swiper-slide"><img src="img work/futsal.png" alt="livro sobre portugol"></div>
+                        <div class="swiper-slide"><img src="img work/camisa prt.png" alt="livro sobre Acessibilidade web"></div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+                <div class="card">
+                <!-- 1ª linha -->
+                    <div class="card__descricao">
+                        <!-- 1ª coluna -->
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descricao__titulo-livro">Escola de idioma e tecnologia </h2>
+                            <p class="descricao__texto"></p>
+                            <p class="descricao__texto">Compromisso sério e responsável em fornecer uma formação reconhecida e valorizada nos segmentos de informática e idiomas</p>
+                        </div>
+                        <!-- 2ª coluna -->
+                        <img src="img work/iditec.png" alt="imagem angular" class="descricao__imagem">
+                    </div>
+                    <!-- 2ª linha -->
+                    <div class="card__botoes">
+                        <!-- 1ª coluna -->
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritos"></li>
+                            
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a class="botoes__ancora" href="https://iditec.com.br/">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2º carrosel -->
+        <section class="carrossel"> 
+            <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+            <!-- Slider main container -->
+            <div class="carrossel__container">
+                
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img work/bike2.png" alt="livro sobre portugol"></div>
+                        <div class="swiper-slide"><img src="img work/chuteira pm.png" alt="livro sobre Acessibilidade web"></div>
+                        <div class="swiper-slide"><img src="img work/xadrez .png" alt="livro sobre apache ApacheKafka"></div>
+                        <div class="swiper-slide"><img src="img work/crea.png" alt="livro sobre liderança"></div>
+                        <div class="swiper-slide"><img src="img work/cube.png" alt="livro sobre javascript"></div>
+                        <div class="swiper-slide"><img src="img work/kit.png" alt="livro sobre Front-end"></div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="card">
+                <!-- 1ª linha -->
+                    <div class="card__descricao">
+                        <!-- 1ª coluna -->
+                        <div class="descricao">
+                            <img class="estrelinhas" src="img/Estrelinhas.svg" alt="">
+                            <h3 class="descricao__titulo">Nosso participantes</h3>
+                            <h2 class="descricao__titulo-livro">Turma da quarta-feira das 16h</h2>
+                            <p class="descricao__texto">Umas das Turma mais boa na quarta-feira as 16h</p>
+                        </div>
+                        <!-- 2ª coluna -->
+                        <img src="img work/20240805_102250_0000.png" alt="imagem angular" class="descricao__imagem">
+                    </div>
+                    <!-- 2ª linha -->
+                    <div class="card__botoes">
+                        <!-- 1ª coluna -->
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritos"></li>
+                            
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a class="botoes__ancora" href="turma.html">Saiba mais</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="topicos">
+            <h2 class="topicos__titulo">Tópicos visitados recentemente</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item"><a class="topicos__link" href="#">Chuteiras</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Rubkis Cube</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Bolas de Esportivas</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Camisas de times</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Gel de nutrientes</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Cartas</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Bicicletas</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Suplementos</a></li>
+            </ul>
+        </section>
+
+        <section class="contato">
+            <div class="contato__descricao">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">Atualizações de produtos,promoções e outros.</p>
+            </div>
+                <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView:3,
+
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+
+          });
+        </script>
+    </body>
+</html>
